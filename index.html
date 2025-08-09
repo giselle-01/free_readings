@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Readings</title>
+</head>
+<body>
+  <main>
+    <h1>Upload File</h1>
+    <form id="fileForm" enctype="multipart/form-data">
+      <input type="file" name="fileCSV" accept=".csv" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre del Usuario</th>
+            <th>Identificacion del Usuario</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th>Titulo</th>
+            <th>Isbn</th>
+            <th>Año de Publicación</th>
+            <th>Autor</th>
+            <th>Fecha de Prestamo</th>
+            <th>Fecha de Devolucion</th>
+            <th>Estado</th>
+            <th>Botones</th>
+          </tr>
+        </thead>
+        <tbody id="tableData">
+          <!-- Data will be populated here by JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
